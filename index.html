@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Storage Website</title>
+  <script src="script.js"></script>
+  <style>
+    #items {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    #items li {
+      margin: 5px 0;
+      padding: 5px;
+      border: 1px solid black;
+    }
+    #item, #quantity {
+      margin-right: 5px;
+    }
+    #add-btn, #delete-btn {
+      font-size: 16px;
+      padding: 5px 10px;
+    }
+    #add-delete-buttons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    #add-delete-buttons button {
+      margin-right: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Storage Website</h1>
+  <div id="add-delete-buttons">
+    <input type="text" id="item" placeholder="Item">
+    <input type="number" id="quantity" placeholder="Quantity">
+    <button id="add-btn">Add</button>
+    <button id="delete-btn">Delete</button>
+  </div>
+  <ul id="items"></ul>
+</body>
+</html>
